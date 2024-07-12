@@ -1,0 +1,244 @@
+body, h1, p {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: 'Roboto', sans-serif;
+    background-color: white;
+}
+
+/* Header Styles */
+header {
+    width: 90%;
+    /* background: linear-gradient(to bottom, rgb(11, 12, 12),rgba(255, 255, 255, 0.5)); Set your header gradient */
+    /* background-color: #28292b;   */
+    color: #ffffff; /* White text color */
+    padding: 0 5%; /* Add some padding */
+    /* text-align: center; Center-align text */
+    align-items: center;
+    /* transition: background-color 0.5s ease; */
+}
+
+header h1 {
+    font-family: 'Oswald', sans-serif;
+    font-weight: normal;
+    color: #0004ff;
+    font-size: 40px;
+    margin-bottom: 5px;
+}
+
+header div span {
+    color: #0004ff;
+    font-family: trebuchet ms, sans-serif;
+    font-weight: normal;
+}
+
+header div {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+header:hover {
+    /* background: linear-gradient(to bottom, rgb(0, 81, 255),#979797);  */
+    background-color: #0004ff;
+    color: #ffffff;
+}
+
+header:hover h1{
+    color: #ffffff;
+}
+
+header:hover nav{
+    color: #ffffff;
+}
+
+header:hover nav li a{
+    color: #ffffff;
+}
+
+nav {
+    width: 100%;
+    color: #414141;
+    font-size: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 20px 0;
+}
+
+nav ul li a {
+    font-family: 'Oswald', sans-serif;
+    position: relative;
+    color: #0004ff;
+    text-decoration: none;
+    font-weight: bold;
+    transition: color 0.2s ease; /* Smooth color transition */
+    padding-bottom: 5px; /* Add some space for the underline effect */
+}
+
+nav ul li a::before,
+nav ul li a::after {
+    content: '';
+    position: absolute;
+    width: 0;
+    height: 3px; /* Thickness of the underline */
+    bottom: 0;
+    background-color: white; /* Color of the underline */
+    transition: width 0.2s ease;
+}
+
+nav ul li a::before {
+    left: 50%;
+    transform: translateX(-100%);
+}
+
+nav ul li a::after {
+    right: 50%;
+    transform: translateX(100%);
+}
+
+nav ul li a:hover::before,
+nav ul li a:hover::after {
+    width: 50%; /* Extend the underline to 50% of the width */
+}
+
+
+
+nav {
+    width: 100%;
+    color: #414141;
+    font-size: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 20px 0;
+}
+
+nav ul li {
+    display: inline-block;
+    list-style: none;
+    margin: 10px 20px;
+}
+
+nav ul li a {
+    color: #0004ff;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+/* Main Content Styles */
+.hero-image img {
+    width: 50%;
+    border: 5px solid #000500; /* Green border for the image */
+    display: block; /* Center the image within its container */
+    margin: 0 auto; /* Center the image horizontally */
+}
+
+.text-block {
+    max-width: 800px;
+    margin: 20px auto;
+    padding: 20px;
+    font-size: 20px;
+    text-align: center;
+
+    /* background-color: #fff; */
+    /* border-radius: 10px; */
+    /* box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); */
+}
+
+.section-title {
+    text-align: center;
+    font-weight: bold;
+}
+
+/* Add your additional styles as needed */
+
+/* Add your CSS styles here for the photo section */
+.photo-section {
+    text-align: center;
+    margin-top: 50px; /* Add some space between header and photo */
+}
+
+.rounded-image {
+    border-radius: 50%; /* Create a circular border */
+    width: 250px; /* Adjust the width of the image */
+    height: 250px; /* Adjust the height of the image */
+    object-fit: cover; /* Maintain aspect ratio and cover the container */
+    border: 10px; /* Optional: Add a border around the image */
+}
+
+/* Flexbox Layout for Main Content */
+.main-container {
+    display: flex;
+    padding: 2em;
+    justify-content: center; /* Center content horizontally */
+}
+
+.photo-contact-section {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding-right: 0em;
+}
+
+.photo-contact-section img.rounded-image {
+    border-radius: 50%;
+    width: 250px; /* Increased the width of the profile image */
+    height: 250px; /* Increased the height of the profile image */
+    object-fit: cover;
+    margin-bottom: 1em;
+}
+
+.contact-info {
+    font-family: 'Roboto', sans-serif;
+    text-align: center;
+    font-size: 1.2em; /* Increased the font size of the contact info */
+}
+
+.contact-link {
+    color: #0004ff; /* Set the color of contact links */
+    text-decoration: none; /* Remove underline from links */
+}
+
+.text-block {
+    flex: 2;
+    padding-left: 0em;
+    margin-left: 0em;
+    margin-right: 10em;
+    font-size: 20px;
+    text-align: justify;
+}
+
+.text-block .section-title{
+    text-align: left;
+    margin-top: 0;
+}
+
+.text-block .section-subtitle{
+    text-align: left;
+    margin-top: 0;
+}
+
+.text-block p {
+    line-height: 1.6;
+}
+
+p {
+    margin-bottom: 1em; /* Adjust the value as needed */
+}
+
+.publications-item {
+    margin-bottom: 10px;
+}
+
+.publications-link {
+    color: #0004ff;
+    text-decoration: none;
+}
+
+.publications-link:hover {
+    text-decoration: underline;
+}
